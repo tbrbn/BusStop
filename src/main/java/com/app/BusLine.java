@@ -3,8 +3,7 @@ package com.app;
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import static com.jayway.jsonpath.Criteria.where;
 import static com.jayway.jsonpath.Filter.filter;
@@ -33,5 +32,14 @@ public class BusLine {
             BusStop stop = new BusStop(stopID,stopData);
             this.stopList.add(stop.getStopName());
         });
+        removeDuplicates();
     }
+
+    public void removeDuplicates(){
+        Set<String> set = new LinkedHashSet<>(this.stopList);
+        this.stopList = new ArrayList<>(set);
+    }
+
+
+
 }

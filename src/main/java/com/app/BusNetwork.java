@@ -3,6 +3,7 @@ package com.app;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
+import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
 import org.apache.commons.io.FileUtils;
 
@@ -16,8 +17,6 @@ import java.util.*;
 import static com.jayway.jsonpath.Criteria.where;
 import static com.jayway.jsonpath.Filter.filter;
 
-
-
 public class BusNetwork {
     Object doc_busLines = "";
     Object doc_stopPoints = "";
@@ -26,24 +25,25 @@ public class BusNetwork {
     List<String> allTheLines;
     Map<String,Integer> lineSize = new HashMap<String,Integer>();
     Map<String,Integer> lineSizeSorted = new LinkedHashMap<String, Integer>();
-    JSONObject jsonOutput = new JSONObject();
+    JSONArray jsonOutput = new JSONArray();
 
 
     public BusNetwork(DataFetcher fetcher) throws IOException {
-        this.doc_busLines = toObject(fetcher.getBusLines());
-        this.doc_stopPoints = toObject(fetcher.getStopPoints());
-        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
+//        //Comment the three commands below and uncomment the block A after to skip fetching from the API and use local file instead
+//        this.doc_busLines = toObject(fetcher.getBusLines());
+//        this.doc_stopPoints = toObject(fetcher.getStopPoints());
+//        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
 
-        //Block to skip fetching and use local files instead
-//        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
-//        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
-//        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
-//
-//
-//        //Declare object to avoid parsing all the time
-//        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
-//        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
-//        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
+        //Block A to skip fetching and use local files instead
+        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
+        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
+        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
+
+
+        //Declare object to avoid parsing all the time
+        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
+        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
+        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
 
         this.allTheLines = getAllTheLines(doc_busLines);
         System.out.println("assigning Size...");
@@ -93,7 +93,8 @@ public class BusNetwork {
             jsonAllStopsForThisLine.put("Stops",line.getStops());
             forFinal.add(jsonAllStopsForThisLine);
         });
-        this.jsonOutput.put("Result",forFinal);
+        //this.jsonOutput.put("Result",forFinal);
+        this.jsonOutput.add(forFinal);
     }
 
 
