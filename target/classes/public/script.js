@@ -13,11 +13,11 @@ function fetchData() {
         </ul>
       `
       })
-      document.getElementById('country').innerHTML = output
+      document.getElementById('BusLines').innerHTML = output
     })
     .catch((error) => {
       console.log(`Error Fetching data : ${error}`)
-      document.getElementById('country').innerHTML = 'Error Loading Data'
+      document.getElementById('BusLines').innerHTML = 'Error Loading Data - try refreshing your folders'
     })
 }
 

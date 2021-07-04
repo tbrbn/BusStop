@@ -29,7 +29,8 @@ public class AppController {
         return "data.html";
     }
 
-    @GetMapping("test")
+    //quick test function to test html stuff
+    @GetMapping("/test")
     public String test(){
         return "test.html";
     }
