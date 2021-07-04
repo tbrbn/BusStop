@@ -3,13 +3,11 @@ package com.app;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
-import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
 import org.apache.commons.io.FileUtils;
 
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -25,8 +23,7 @@ public class BusNetwork {
     List<String> allTheLines;
     Map<String,Integer> lineSize = new HashMap<String,Integer>();
     Map<String,Integer> lineSizeSorted = new LinkedHashMap<String, Integer>();
-    JSONArray jsonOutput = new JSONArray();
-
+    JSONObject jsonOutput = new JSONObject();
 
     public BusNetwork(DataFetcher fetcher) throws IOException {
 //        //Comment the three commands below and uncomment the block A after to skip fetching from the API and use local file instead
@@ -93,8 +90,9 @@ public class BusNetwork {
             jsonAllStopsForThisLine.put("Stops",line.getStops());
             forFinal.add(jsonAllStopsForThisLine);
         });
-        //this.jsonOutput.put("Result",forFinal);
-        this.jsonOutput.add(forFinal);
+        this.jsonOutput.put("Results",forFinal);
+
+
     }
 
 

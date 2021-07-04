@@ -2,6 +2,7 @@ package com.app;
 
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
+import org.json.JSONArray;
 
 import java.util.*;
 

@@ -5,6 +5,7 @@ function fetchData() {
       console.log(data)
       let output = '<h2">Top 10 Bus Lines with most stops</h2>'
       data.forEach(function (item) {
+        console.log(item)
         output += `
         <ul>
           <li>Line: ${item.Line}</li>
