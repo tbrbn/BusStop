@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="Final123">
+    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="Final1234">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/BusLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/BusLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625442010774</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Final1234">
+      <created>1625442615933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625442615933</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -186,7 +196,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pushing all" />
     <MESSAGE value="data" />
-    <option name="LAST_COMMIT_MESSAGE" value="data" />
+    <MESSAGE value="Final1234" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final1234" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -197,5 +208,8 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BusStop$BusStops.ic" NAME="BusStops Coverage Results" MODIFIED="1625442531611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

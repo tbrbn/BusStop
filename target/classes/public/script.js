@@ -27,5 +27,5 @@ function test(){
             res => {
                 console.log(res.json())})
 }
-
+alert("Done!")
 fetchData()
