@@ -22,10 +22,15 @@ public class AppController {
         DataFetcher fetcher = new DataFetcher(url_allBusLines, url_stopPointsDB, url_busLinesPattern);
         BusNetwork busNetwork = new BusNetwork(fetcher);
 
-        FileWriter output_file = new FileWriter("./src/main/resources/JSON/output.json");
+        FileWriter output_file = new FileWriter("./src/main/resources/public/output.json");
         output_file.write(busNetwork.jsonOutput.toJSONString());
         output_file.close();
         return "data.html";
+    }
+
+    @GetMapping("test")
+    public String test(){
+        return "test.html";
     }
 
 
