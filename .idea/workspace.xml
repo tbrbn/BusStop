@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="final for real ?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/testController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/testController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +49,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="SELECTIVE" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
@@ -237,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625475673255</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="final for real ?">
+      <created>1625476089472</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1625476089472</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -253,11 +269,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="722d2c89-7e38-4e3e-a94c-36b756115372">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="722d2c89-7e38-4e3e-a94c-36b756115372" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />

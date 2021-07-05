@@ -20,7 +20,8 @@ public class BusStop {
             this.stopName = tmp_name.get(0);
         }
         catch (Exception e){
-            this.stopName = "n/a";
+            //Some stops don't have name (outdated perhaps?) so instead return a n/a + code
+            this.stopName = "n/a-"+stopCode;
         }
     }
 

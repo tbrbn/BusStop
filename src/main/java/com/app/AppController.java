@@ -28,7 +28,7 @@ public class AppController {
 }
 
 @Controller
-class testController {
+class AnotherController {
     //rendering the results.html page wich contains the js to fetch data from the restcontroller above
     @GetMapping("/results")
     public String test(){

@@ -36,6 +36,7 @@ public class BusLine {
     }
 
     public void removeDuplicates(){
+        //Up removing the duplicate names for better visibility on the output page
         Set<String> set = new LinkedHashSet<>(this.stopList);
         this.stopList = new ArrayList<>(set);
     }

@@ -6,7 +6,6 @@ import com.jayway.jsonpath.JsonPath;
 import net.minidev.json.JSONObject;
 import org.apache.commons.io.FileUtils;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -27,20 +26,20 @@ public class BusNetwork {
 
     public BusNetwork(DataFetcher fetcher) throws IOException {
         //Comment the three commands below and uncomment the block A after to skip fetching from the API and use local file instead
-//        this.doc_busLines = toObject(fetcher.getBusLines());
-//        this.doc_stopPoints = toObject(fetcher.getStopPoints());
-//        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
+        this.doc_busLines = toObject(fetcher.getBusLines());
+        this.doc_stopPoints = toObject(fetcher.getStopPoints());
+        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
 
-//        //Block A to skip fetching and use local files instead and comment the fetcher also
-        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
-        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
-        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
-
-        //Declare object to avoid parsing all the time
-        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
-        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
-        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
-        //END OF BLOCK A
+//        //Block A to skip fetching and use local files instead and comment the fetcher.url_to_string command also
+//        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
+//        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
+//        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
+//
+//        //Declare object to avoid parsing all the time
+//        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
+//        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
+//        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
+//        //END OF BLOCK A
 
         this.allTheLines = getAllTheLines(doc_busLines);
         System.out.println("Calculatin lines Size...");
@@ -72,7 +71,7 @@ public class BusNetwork {
         });
     }
 
-    //sortering and isolate the top N of the map values
+    //sorting and isolate the top N of the map values
     public void slashToTopN(Map<String,Integer> lineSize, Integer n){
         lineSize.entrySet()
                 .stream()
@@ -81,6 +80,7 @@ public class BusNetwork {
                 .forEachOrdered(x->this.lineSizeSorted.put(x.getKey(),x.getValue()));
     }
 
+    //Fills the JSON object with lines and their stops
     public void generateNetworkFile(Map<String,Integer> lineSize){
         ArrayList forFinal = new ArrayList<>(); //intermediate array list used for the final json output (dirty?)
         lineSize.keySet().forEach(lineNumber->{
@@ -91,8 +91,6 @@ public class BusNetwork {
             forFinal.add(jsonAllStopsForThisLine);
         });
         this.jsonOutput.put("Results",forFinal);
-
-
     }
 
 
