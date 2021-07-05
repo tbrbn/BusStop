@@ -27,19 +27,19 @@ public class BusNetwork {
 
     public BusNetwork(DataFetcher fetcher) throws IOException {
         //Comment the three commands below and uncomment the block A after to skip fetching from the API and use local file instead
-        this.doc_busLines = toObject(fetcher.getBusLines());
-        this.doc_stopPoints = toObject(fetcher.getStopPoints());
-        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
+//        this.doc_busLines = toObject(fetcher.getBusLines());
+//        this.doc_stopPoints = toObject(fetcher.getStopPoints());
+//        this.doc_linesPattern = toObject(fetcher.getLinesPattern());
 
-//        //Block A to skip fetching and use local files instead
-//        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
-//        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
-//        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
+//        //Block A to skip fetching and use local files instead and comment the fetcher also
+        String allLinesDB = FileUtils.readFileToString(new File("allthelines.json"), StandardCharsets.UTF_8);
+        String infoLinesDB = FileUtils.readFileToString(new File("linedata.json"), StandardCharsets.UTF_8);
+        String infoStopDB = FileUtils.readFileToString(new File("stopdata-init.json"), StandardCharsets.UTF_8);
 
-//        //Declare object to avoid parsing all the time
-//        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
-//        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
-//        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
+        //Declare object to avoid parsing all the time
+        this.doc_busLines = Configuration.defaultConfiguration().jsonProvider().parse(allLinesDB);
+        this.doc_linesPattern = Configuration.defaultConfiguration().jsonProvider().parse(infoLinesDB);
+        this.doc_stopPoints = Configuration.defaultConfiguration().jsonProvider().parse(infoStopDB);
         //END OF BLOCK A
 
         this.allTheLines = getAllTheLines(doc_busLines);
