@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="final for real ?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +61,7 @@
     <configuration name="BusStops" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.app.Application" />
       <module name="BusStop_SBAB" />
+      <option name="PROGRAM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +92,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.BusStops" />
+      <item itemvalue="Application.test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.test" />
@@ -295,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625478948046</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="final for real ?">
+      <created>1625479154420</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1625479154420</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

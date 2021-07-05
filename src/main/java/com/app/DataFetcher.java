@@ -3,6 +3,7 @@ package com.app;
 import org.apache.tomcat.util.codec.binary.StringUtils;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -37,7 +38,8 @@ public class DataFetcher {
     }
 
     public String url_to_str(URL url) throws IOException {
-        String output = "";
+
+        String output ="ä";
         //BLOCK TO COMMENT WHEN RUNNING LOCAL
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestProperty("accept", "application/json");
@@ -53,8 +55,7 @@ public class DataFetcher {
         }
         connection.disconnect();
         //END OF BLOCK
-        String tmp = new String(output.getBytes(StandardCharsets.UTF_8),"UTF-8");
-        System.out.println(tmp);
+        System.out.println(output);
         return output;
     }
 
