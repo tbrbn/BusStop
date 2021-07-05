@@ -1,5 +1,5 @@
 function fetchData() {
-  fetch('output.json')
+  fetch('/getdata')
     .then((res) => res.json())
     .then((data) => {
       console.log(data)
@@ -21,11 +21,5 @@ function fetchData() {
     })
 }
 
-function test(){
-    fetch('output.json')
-        .then(
-            res => {
-                console.log(res.json())})
-}
-
 fetchData()
+

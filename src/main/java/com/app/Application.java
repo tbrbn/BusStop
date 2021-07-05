@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
+    //default localhost:8080
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

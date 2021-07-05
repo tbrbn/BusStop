@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="Final1234" />
+    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="Final1234">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/app/testController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/test.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,9 +59,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thibaut\IdeaProjects\BusStop\src\main\resources\templates" />
       <recent name="C:\Users\Thibaut\IdeaProjects\BusStop" />
       <recent name="C:\Users\Thibaut\IdeaProjects\BusStop\src\main\resources\public" />
-      <recent name="C:\Users\Thibaut\IdeaProjects\BusStop\src\main\resources\templates" />
       <recent name="C:\Users\Thibaut\IdeaProjects\BusStop\src\main\resources" />
       <recent name="C:\Users\Thibaut\IdeaProjects\BusStop\src" />
     </key>
@@ -165,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625442775573</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Final1234">
+      <created>1625442806149</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625442806149</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -208,6 +229,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BusStop$BusStops.ic" NAME="BusStops Coverage Results" MODIFIED="1625442531611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BusStop$BusStops.ic" NAME="BusStops Coverage Results" MODIFIED="1625470416048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

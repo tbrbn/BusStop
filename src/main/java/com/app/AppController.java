@@ -7,11 +7,13 @@ import java.net.URL;
 import org.json.JSONException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class AppController {
 
-    @GetMapping("/data")
+    //RESTcontroller to get the data
+    @GetMapping("/getdata")
     public String load_the_data() throws IOException, JSONException {
         URL url_stopPointsDB = new URL("https://api.sl.se/api2/LineData.json?model=StopPoint&key=16e6ac2b112b4e9f8424697d432f846d&DefaultTransportModeCode=BUS");
         URL url_allBusLines = new URL("https://api.sl.se/api2/linedata.json?key=16e6ac2b112b4e9f8424697d432f846d&model=Line&DefaultTransportModeCode=BUS");
@@ -20,16 +22,16 @@ public class AppController {
         DataFetcher fetcher = new DataFetcher(url_allBusLines, url_stopPointsDB, url_busLinesPattern);
         BusNetwork busNetwork = new BusNetwork(fetcher);
 
-        FileWriter output_file = new FileWriter("./src/main/resources/public/output.json");
-        output_file.write(busNetwork.jsonOutput.get("Results").toString());
-        output_file.close();
-        return "data.html";
+        return busNetwork.jsonOutput.get("Results").toString();
     }
+}
 
-    //quick test function to test html stuff
-    @GetMapping("/test")
+@Controller
+class testController {
+    //rendering the results.html page wich contains the js to fetch data from the restcontroller above
+    @GetMapping("/results")
     public String test(){
-        return "test.html";
+        return "results.html";
     }
 
 
