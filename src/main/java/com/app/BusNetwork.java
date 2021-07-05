@@ -43,13 +43,13 @@ public class BusNetwork {
         //END OF BLOCK A
 
         this.allTheLines = getAllTheLines(doc_busLines);
-        System.out.println("assigning Size...");
+        System.out.println("Calculatin lines Size...");
         assignSizeToLine(this.allTheLines);
-        System.out.println("...Done");
         slashToTopN(this.lineSize,10);
-        System.out.println("Generating Output File...");
-        generateNetworkFile(this.lineSizeSorted);
         System.out.println("...Done");
+        System.out.println("Generating Output ...");
+        generateNetworkFile(this.lineSizeSorted);
+        System.out.println("...DONE");
     }
 
     //This one is to avoid having to parse the json string everytime

@@ -12,14 +12,13 @@ public class DataFetcher {
     String linesPattern = "";
 
     public DataFetcher(URL url_busLines, URL url_stopPoints, URL url_linesPattern) throws IOException {
-        System.out.println("startFetching");
+        System.out.println("startFetching...");
         this.busLines = url_to_str(url_busLines);
-        System.out.println("1/3");
+        System.out.println("1/3...");
         this.stopPoints = url_to_str(url_stopPoints);
-        System.out.println("2/3");
+        System.out.println("2/3...");
         this.linesPattern = url_to_str(url_linesPattern);
-        System.out.println("3/3");
-        System.out.println("fetched");
+        System.out.println("3/3 - All fetched!");
     }
 
     public String getBusLines() {
