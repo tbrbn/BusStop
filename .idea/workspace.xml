@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="final for real ?">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusStop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/testController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/testController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +245,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625476089472</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="final for real ?">
+      <created>1625476531911</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1625476531911</updated>
+    </task>
+    <task id="LOCAL-00022" summary="final for real ?">
+      <created>1625476860571</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1625476860572</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
