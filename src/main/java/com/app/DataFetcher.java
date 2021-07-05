@@ -50,6 +50,7 @@ public class DataFetcher {
         }
         connection.disconnect();
         //END OF BLOCK
+        System.out.println(output);
         return output;
     }
 
