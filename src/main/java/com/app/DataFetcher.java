@@ -53,9 +53,7 @@ public class DataFetcher {
         }
         connection.disconnect();
         //END OF BLOCK
-        byte[] tmp1 = StringUtils.getBytesUtf8(output);
-        String tmp = StringUtils.newStringUtf8(tmp1);
-        System.out.println(tmp);
+        System.out.println(output);
         return output;
     }
 

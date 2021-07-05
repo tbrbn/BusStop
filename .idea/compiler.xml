@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BusStop_SBAB" target="1.8" />
+	<module name="BusStop_SBAB" target="1.8" />
 	<module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
