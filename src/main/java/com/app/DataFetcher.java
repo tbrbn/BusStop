@@ -1,8 +1,11 @@
 package com.app;
 
+import org.apache.tomcat.util.codec.binary.StringUtils;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 
@@ -50,7 +53,9 @@ public class DataFetcher {
         }
         connection.disconnect();
         //END OF BLOCK
-        System.out.println(output);
+        byte[] tmp1 = StringUtils.getBytesUtf8(output);
+        String tmp = StringUtils.newStringUtf8(tmp1);
+        System.out.println(tmp);
         return output;
     }
 
