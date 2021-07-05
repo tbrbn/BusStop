@@ -21,7 +21,6 @@ public class AppController {
 
         DataFetcher fetcher = new DataFetcher(url_allBusLines, url_stopPointsDB, url_busLinesPattern);
         BusNetwork busNetwork = new BusNetwork(fetcher);
-        System.out.println(busNetwork.jsonOutput.get("Results").toString());
         return busNetwork.jsonOutput.get("Results").toString();
 
     }
