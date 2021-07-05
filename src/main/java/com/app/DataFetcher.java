@@ -53,7 +53,8 @@ public class DataFetcher {
         }
         connection.disconnect();
         //END OF BLOCK
-        System.out.println(output);
+        String tmp = new String(output.getBytes(StandardCharsets.UTF_8),"UTF-8");
+        System.out.println(tmp);
         return output;
     }
 
