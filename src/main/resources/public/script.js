@@ -9,7 +9,7 @@ function fetchData() {
         output += `
         <ul>
           <li>Line: ${item.Line}</li>
-          <li>Stop: ${item.Stops}</li>
+          <li>Stops: ${item.Stops}</li>
         </ul>
       `
       })

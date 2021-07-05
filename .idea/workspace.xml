@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="Final1234">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/app/testController.class" afterDir="false" />
+    <list default="true" id="3cfd65a5-56a8-4165-887e-14faa9e3d161" name="Default Changelist" comment="final for real ?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/BusNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/DataFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/app/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/BusNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/DataFetcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/testController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/testController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625442806149</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="final for real ?">
+      <created>1625470964819</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625470964819</updated>
+    </task>
+    <task id="LOCAL-00014" summary="final for real ?">
+      <created>1625471037399</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625471037399</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -216,7 +235,8 @@
     <MESSAGE value="Pushing all" />
     <MESSAGE value="data" />
     <MESSAGE value="Final1234" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final1234" />
+    <MESSAGE value="final for real ?" />
+    <option name="LAST_COMMIT_MESSAGE" value="final for real ?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

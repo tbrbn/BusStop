@@ -1,7 +1,9 @@
 package com.app;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Scanner;
 
 
 public class DataFetcher {
@@ -34,19 +36,19 @@ public class DataFetcher {
 
     public String url_to_str(URL url) throws IOException {
         String output = "";
-//        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//        connection.setRequestProperty("accept", "application/json");
-//        Integer responseStream = connection.getResponseCode();
-//        if (responseStream != 200) {
-//            throw new RuntimeException("HttpResponseCode: " + responseStream);
-//        } else {
-//            Scanner scanner = new Scanner(url.openStream());
-//            while (scanner.hasNext()){
-//                output+=scanner.nextLine();
-//            }
-//            scanner.close();
-//        }
-//        connection.disconnect();
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestProperty("accept", "application/json");
+        Integer responseStream = connection.getResponseCode();
+        if (responseStream != 200) {
+            throw new RuntimeException("HttpResponseCode: " + responseStream);
+        } else {
+            Scanner scanner = new Scanner(url.openStream());
+            while (scanner.hasNext()){
+                output+=scanner.nextLine();
+            }
+            scanner.close();
+        }
+        connection.disconnect();
         return output;
     }
 
