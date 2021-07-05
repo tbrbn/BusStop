@@ -42,7 +42,7 @@ public class BusNetwork {
 //        //END OF BLOCK A
 
         this.allTheLines = getAllTheLines(doc_busLines);
-        System.out.println("Calculatin lines Size...");
+        System.out.println("Calculating lines Size...");
         assignSizeToLine(this.allTheLines);
         slashToTopN(this.lineSize,10);
         System.out.println("...Done");

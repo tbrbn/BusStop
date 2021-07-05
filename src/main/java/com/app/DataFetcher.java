@@ -2,7 +2,9 @@ package com.app;
 
 import org.apache.tomcat.util.codec.binary.StringUtils;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -39,24 +41,20 @@ public class DataFetcher {
 
     public String url_to_str(URL url) throws IOException {
 
-        String output ="ä";
-        //BLOCK TO COMMENT WHEN RUNNING LOCAL
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
         connection.setRequestProperty("accept", "application/json");
-        Integer responseStream = connection.getResponseCode();
-        if (responseStream != 200) {
-            throw new RuntimeException("HttpResponseCode: " + responseStream);
-        } else {
-            Scanner scanner = new Scanner(url.openStream());
-            while (scanner.hasNext()){
-                output+=scanner.nextLine();
-            }
-            scanner.close();
+        //Integer responseStream = connection.getResponseCode(); //in case one need to handle issues
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(connection.getInputStream()));
+        String inputLine;
+        StringBuffer content = new StringBuffer();
+        while ((inputLine = in.readLine()) != null) {
+            content.append(inputLine);
         }
+        in.close();
         connection.disconnect();
-        //END OF BLOCK
-        System.out.println(output);
-        return output;
+        return content.toString();
     }
 
 }
